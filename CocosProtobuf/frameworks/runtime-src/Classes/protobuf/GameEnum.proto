@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+enum RoleType {
+	FIGHTER		= 0;
+	BOWMAN		= 1;
+    MAGICIAN	= 2;
+}

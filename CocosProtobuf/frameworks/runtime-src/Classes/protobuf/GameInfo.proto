@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "GameEnum.proto";
+
+
+message RoleInfo {
+	string name		= 1;
+	RoleType type	= 2;	
+}
+
+message ItemInfo {
+	string name	= 1;
+	int32 price	= 2;
+}
+
+message GameInfo {
+	RoleInfo roleInfo = 1;
+	ItemInfo itemInfo = 2;
+}

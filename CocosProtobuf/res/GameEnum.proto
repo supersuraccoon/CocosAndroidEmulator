@@ -1,0 +1,9 @@
+package game.enumeration;
+option java_package = "com.game.enumeration";
+option java_outer_classname = "GameEnumProtos";
+
+enum RoleType {
+	FIGHTER		= 1;
+	BOWMAN		= 2;
+    MAGICIAN	= 3;
+}

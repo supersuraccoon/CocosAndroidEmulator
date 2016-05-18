@@ -1,0 +1,17 @@
+package game.info;
+option java_package = "com.game.info";
+option java_outer_classname = "GameInfoProtos";
+import "GameEnum.proto";
+
+message RoleInfo {
+	required string name				= 1;
+	required enumeration.RoleType type	= 2;	
+}
+message ItemInfo {
+	required string name	= 1;
+	optional int32 price	= 2;
+}
+message GameInfo {
+	repeated RoleInfo roleInfo = 1;
+	repeated ItemInfo itemInfo = 2;
+}
